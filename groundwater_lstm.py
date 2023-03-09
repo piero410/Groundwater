@@ -148,7 +148,7 @@ def validation(test_begin,time_step=20):
 
 #！！！！！！！！！！！！！！！！！！Main！！！！！！！！！！！！！！！！！！！！！！
 start=0
-end=300
+end=10
 
 whole_data=[]   
 data=[]              
@@ -163,9 +163,6 @@ for i in range(start, end):
     current_bore=i
     
     filename = 'dataset/' + str(current_bore) + '.csv'
-    flag=os.path.isfile(filename)
-    if flag == False:
-        continue
 
     borenum.append(i) 
     jingnum=jingnum+1
